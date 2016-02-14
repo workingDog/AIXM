@@ -1,8 +1,7 @@
-
+.......how to java
 
 To generate java classes from the AIXM xsd files using JAXB tool xjc, do:
 
 xjc -b binding.xjb ./xsd/* -extension
-
 
 where xsd is the directory containing the xsd files, and binding.xjb is in directory one up from it.

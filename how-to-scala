@@ -1,0 +1,16 @@
+......how to scala
+
+for scala you need to put the xsd files in the following directory structure:
+src/main/xsd
+
+modify the pom.xml to reflect the desired scala version etc..,
+then using maven to generate the source files type:
+
+mvn generate-sources
+
+
+to compile, type:
+
+mvn compile
+
+(however this does not compile)
