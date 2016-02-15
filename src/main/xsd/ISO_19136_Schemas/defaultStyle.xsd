@@ -58,8 +58,8 @@
 		<complexContent>
 			<extension base="gml:AbstractStyleType">
 				<sequence>
-					<element ref="gml:FeatureStyle" maxOccurs="unbounded"/>
-					<element ref="gml:GraphStyle" minOccurs="0"/>
+					<element ref="gml:featureStyleProp" maxOccurs="unbounded"/>
+					<element ref="gml:graphStyleProp" minOccurs="0"/>
 				</sequence>
 			</extension>
 		</complexContent>
@@ -67,12 +67,12 @@
 	<!-- ==============================================================
       Feature Style Property
 	============================================================== -->
-	<element name="featureStyleProperty" type="gml:FeatureStylePropertyType">
+	<element name="featureStyleProp" type="gml:FeatureStylePropertyType">
 		<annotation>
 			<documentation/>
 		</annotation>
 	</element>
-	<!-- =========================================================== -->
+<!--	 =========================================================== -->
 	<complexType name="FeatureStylePropertyType">
 		<annotation>
 			<documentation/>
@@ -100,9 +100,9 @@
 			<extension base="gml:AbstractGMLType">
 				<sequence>
 					<element name="featureConstraint" type="string" minOccurs="0"/>
-					<element ref="gml:GeometryStyle" minOccurs="0" maxOccurs="unbounded"/>
-					<element ref="gml:TopologyStyle" minOccurs="0" maxOccurs="unbounded"/>
-					<element ref="gml:LabelStyle" minOccurs="0"/>
+					<element ref="gml:geometryStyleProp" minOccurs="0" maxOccurs="unbounded"/>
+					<element ref="gml:topologyStyleProp" minOccurs="0" maxOccurs="unbounded"/>
+					<element ref="gml:labelStyleProp" minOccurs="0"/>
 				</sequence>
 				<attribute name="featureType" type="string" use="optional"/>
 				<attribute name="baseType" type="string" use="optional"/>
@@ -144,12 +144,12 @@
 	<!-- ==============================================================
        Geometry Style Property
 	============================================================== -->
-	<element name="geometryStyleProperty" type="gml:GeometryStylePropertyType">
+	<element name="geometryStyleProp" type="gml:GeometryStylePropertyType">
 		<annotation>
 			<documentation/>
 		</annotation>
 	</element>
-	<!-- =========================================================== -->
+<!--	 =========================================================== -->
 	<complexType name="GeometryStylePropertyType">
 		<annotation>
 			<documentation/>
@@ -185,7 +185,7 @@
 							</annotation>
 						</element>
 					</choice>
-					<element ref="gml:LabelStyle" minOccurs="0"/>
+					<element ref="gml:labelStyleProp" minOccurs="0"/>
 				</sequence>
 				<attribute name="geometryProperty" type="string"/>
 				<attribute name="geometryType" type="string"/>
@@ -195,12 +195,12 @@
 	<!-- ==============================================================
        Topology Style Property
 	============================================================== -->
-	<element name="topologyStyleProperty" type="gml:TopologyStylePropertyType">
+	<element name="topologyStyleProp" type="gml:TopologyStylePropertyType">
 		<annotation>
 			<documentation/>
 		</annotation>
 	</element>
-	<!-- =========================================================== -->
+<!--	 =========================================================== -->
 	<complexType name="TopologyStylePropertyType">
 		<annotation>
 			<documentation/>
@@ -236,7 +236,7 @@
 							</annotation>
 						</element>
 					</choice>
-					<element ref="gml:LabelStyle" minOccurs="0"/>
+					<element ref="gml:labelStyleProp" minOccurs="0"/>
 				</sequence>
 				<attribute name="topologyProperty" type="string"/>
 				<attribute name="topologyType" type="string"/>
@@ -246,12 +246,12 @@
 	<!-- ==============================================================
        Label Style Property
 	============================================================== -->
-	<element name="labelStyleProperty" type="gml:LabelStylePropertyType">
+	<element name="labelStyleProp" type="gml:LabelStylePropertyType">
 		<annotation>
 			<documentation/>
 		</annotation>
 	</element>
-	<!-- =========================================================== -->
+<!--	 =========================================================== -->
 	<complexType name="LabelStylePropertyType">
 		<annotation>
 			<documentation/>
@@ -287,12 +287,12 @@
 	<!-- ==============================================================
       Graph Style Property
 	============================================================== -->
-	<element name="graphStyleProperty" type="gml:GraphStylePropertyType">
+	<element name="graphStyleProp" type="gml:GraphStylePropertyType">
 		<annotation>
 			<documentation/>
 		</annotation>
 	</element>
-	<!-- =========================================================== -->
+<!--	 =========================================================== -->
 	<complexType name="GraphStylePropertyType">
 		<annotation>
 			<documentation/>
