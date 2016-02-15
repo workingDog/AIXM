@@ -2,6 +2,21 @@
 
 To generate java classes from the AIXM xsd files using JAXB tool xjc, do:
 
-xjc -b binding.xjb ./xsd/* -extension
+xjc -b binding.xjb ./schema/* -extension
 
-where xsd is the directory containing the xsd files, and binding.xjb is in directory one up from it.
+where schema is the directory containing the xsd files, and binding.xjb is in directory one up from it.
+
+Note:
+due to conflicts with capitalised names I had to change the following names
+in defaultStyle.xsd in ISO_19130_Schemas directory.
+
+featureStyle -> featureStyleProp
+geometryStyle -> geometryStyleProp
+topologyStyle -> topologyStyleProp
+labelStyle -> labelStyleProp
+graphStyle -> graphStyleProp
+
+
+
+
+
